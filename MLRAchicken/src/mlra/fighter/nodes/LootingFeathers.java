@@ -11,18 +11,16 @@ public class LootingFeathers extends Node {
 	public static boolean lootFeather = false;
 
 	public LootingFeathers(MethodContext arg) {
-
 		super(arg);
 	}
 
 	@Override
 	public void run() {
 
-		if (feather.isOnScreen()) {
-
-			feather.interact("Take", feather.getName());
-			sleep(1000);
-
+		if (feather.isOnScreen() && feather.interact("Take", feather.getName()) {
+		
+			sleep(random.nextInt(1800,2300));
+			System.out.println("done sleeping");
 		} else {
 
 			System.out.println("Walking to feathers");
