@@ -38,7 +38,6 @@ public class MLRAchicken extends PollingScript {
 		if (!guiIsOn) {
 			
 			for (Node node : allMyNodes) {
-				
 				if (node.canRun()) {
 					node.run();
 				}
